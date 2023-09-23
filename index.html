@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Portfolio - Riz Mark Corpuz</title>
@@ -19,8 +14,19 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+				<nav>
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="#first" class="scrolly">ABOUT</a></li>
+						<li><a href="#portfolio" class="scrolly">PORTFOLIO</a></li>
+						<li><a href="#skills" class="scrolly">SERVICES</a></li>
+						<li><a href="#contact" class="scrolly">Contact</a></li>
+					</ul>
+						<img class="moon" src="images/moon.svg" alt="" id="icon" >
+				</nav>
+
 				<!-- Intro -->
-					<section class="intro">
+					<section class="intro" style="margin-top: 90px;">
 						<header>
 							<h1>Riz Mark Corpuz Portfolio</h1>
 							<p>Full-Stack Developer well versed in PHP, JavaScript, SQL, .NET <br> <a href="https://www.linkedin.com/in/riz-mark-corpuz/">rizmarkcorpuz</a></p>
@@ -29,12 +35,26 @@
 							</ul>
 						</header>
 						<div class="content">
-							<span class="image fill" data-position="center"><img style="padding: 100px" src="images/rizmark_corpuz.JPG" alt="" /></span>
+							<span class="image fill" data-position="center"><img src="images/home_page.jpg" alt="" /></span>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>About Me</h2>
+						</header>
+						<div class="content">
+							<span class="image main"><img style="width: 90%; height: 90%; padding: 50px; margin-left: 50px;" src="images/rizmark_corpuz.JPG" alt="" /></span>
+							<p><strong>A Bachelor of Science in Information Technology</strong> graduate who seeks an opportunity to contribute myskills and knowledge to your company.</p>
+							<p><strong>Education</strong> 2018 - 2023</p>
+							<p><strong>Cavite State University - Cavite City Campus</strong></p>
+							<p><strong>Cum Laude</strong></p>
 						</div>
 					</section>
 
 				<!-- Section -->
-					<section id="first">
+					<section id="portfolio">
 						<header>
 							<h2>Web Development</h2>
 						</header>
@@ -67,7 +87,7 @@
 				</section>
 
 				<!-- Section -->
-					<section>
+					<section id="skills">
 						<header>
 							<h2>Technical Skills</h2>
 						</header>
@@ -84,6 +104,59 @@
 								<li class="icon solid fa-briefcase">Microsoft Office</li>
 								<li class="icon solid fa-brush">Adobe Photoshop</li>
 							</ul>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header>
+							<h2>Programming Language</h2>
+						</header>
+						<div class="content">
+							<p><strong>Programming Language</strong> I use when developing a website, game, or an application.
+								<div class="row ">
+									<div class="col-2">
+										<img src="images/html.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>HTML</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/css.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>CSS</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/js.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>JavaScript</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/react.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>React</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/redux.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>Redux</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/node.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>NodeJS</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/mysql.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>MySQL</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/php.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>PHP</strong></p>
+									</div>
+									<div class="col-2">
+										<img src="images/java.png" alt="Avatar" class="circle_img">
+										<p style="text-align: center;"><strong>Java</strong></p>
+									</div>
+								</div>
+								
+								
+								
+								
+								
 						</div>
 					</section>
 			
@@ -357,7 +430,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				-->
 
 				<!-- Section -->
-					<section>
+					<section id="contact">
 						<header>
 							<h2>Get in touch</h2>
 						</header>
@@ -370,7 +443,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 								</li>
 								<li>
 									<h3>Mobile Number</h3>
-									<a href="#">(+639) 993-975-0780</a> Dito
+									<a href="#">(+639) 993-975-0780</a> DITO
 									<br>
 									<a href="#">(+639) 997-100-1588</a> TM
 								</li>
@@ -406,4 +479,23 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+
+		var icon = document.getElementById("icon");
+
+		icon.onclick = function(){
+			document.body.classList.toggle("dark-theme");
+			icon.style.transition = '0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+			if(document.body.classList.contains("dark-theme")){
+				icon.style.transition = '0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+				icon.src = "images/sun.svg";
+				icon.style.transform = "rotate(1000deg)"
+			}else{
+				icon.style.transition = '0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+				icon.style.transform = "rotate(0deg)"
+				icon.src = "images/moon.svg"
+			}
+		}
+
+	</script>
 </html>
