@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	transition: 0.5s ease-in-out;
 }
 
 ol, ul {
@@ -199,16 +200,16 @@ input, select, textarea {
 		font-weight: 600;
 		color: var(--secondary-color);
 		transition: 0.5s ease-in-out;
+		
 	}
 
 	em, i {
 		font-style: italic;
-		transition: 0.5s ease-in-out;
+		
 	}
 
 	p {
 		margin: 0 0 2rem 0;
-		transition: 0.5s ease-in-out;
 		
 	}
 
@@ -3208,6 +3209,7 @@ input, select, textarea {
 				text-align: center;
 				top: 0;
 				width: 3.25rem;
+				transition: 0.5s ease-in-out;
 			}
 
 			ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
@@ -3905,15 +3907,25 @@ input, select, textarea {
 	#icon{
 		width: 30px;
 		cursor: pointer	;
+		color: var(--primary-color);
 	}
 
 	nav ul li a:hover{
-		color: #49fcd4
+		color: var(--third-color)
 	}
 
 	nav ul li a{
 		text-decoration: none;
-		color: var(--secondary-color);
+		color: var(--primary-color);
+	}
+
+	@media screen and (max-width: 1152px){
+
+		nav ul li a{
+			text-decoration: none;
+			color: var(--secondary-color);
+		}
+		
 	}
 
 	nav ul li{
@@ -3926,6 +3938,27 @@ input, select, textarea {
 		flex: 1;
 		text-align: right;
 		margin-bottom: 0px;
+	}
+
+	.dark-theme nav{
+		background-color: var(--third-color);
+		transition: 0.5s ease-in-out;
+	}
+
+	.dark-theme nav a{
+		color: var(--second-color);
+	}
+
+	.scrolled nav{
+		background-color: var(--third-color);
+	}
+
+	.scrolled nav ul li a:hover{
+		color: var(--fourth-color);
+	}
+
+	.scrolled nav a{
+		color: var(--secondary-color);
 	}
 
 	nav{
@@ -3941,11 +3974,9 @@ input, select, textarea {
 		right: 0;
 		z-index: 20;
 		background-attachment: fixed;
-		background-color: var(--third-color);
 		background-position: 25% 50%;
 		background-repeat: repeat-y;
 		background-size: 40rem auto;
-		transition: 0.5s ease-in-out;
 	}
 
 	.logo{
@@ -3958,6 +3989,7 @@ input, select, textarea {
 		--primary-color: #000106;
 		--secondary-color: #fff;
 		--third-color: #006650;
+		--fourth-color: #49fcd4;
 	}
 
 	  
@@ -3965,6 +3997,7 @@ input, select, textarea {
 		--primary-color: #edf2fc;
 		--secondary-color: #212121;
 		--third-color: #49fcd4;
+		--fourth-color: #006650;
 	}
 
 	.circle_img{
@@ -4016,5 +4049,3 @@ input, select, textarea {
 		transition: 0.5s ease-in-out;
 	}
 		
-
-
