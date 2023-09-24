@@ -24,11 +24,13 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	transition: 0.2s ease-in-out;}
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+
+}
 
 body {
 	line-height: 1;
@@ -164,6 +166,7 @@ input, select, textarea {
 	body {
 		background-color: var(--primary-color);
 		color: var(--secondary-color);
+		
 	}
 
 	body, input, select, textarea {
@@ -173,17 +176,18 @@ input, select, textarea {
 		font-weight: 300;
 		letter-spacing: 0.0375em;
 		line-height: 2;
+		
 	}
 
 	a {
-		-moz-transition: border-bottom-color 0.25s ease-in-out;
-		-webkit-transition: border-bottom-color 0.25s ease-in-out;
-		-ms-transition: border-bottom-color 0.25s ease-in-out;
-		transition: border-bottom-color 0.25s ease-in-out;
+		-moz-transition: border-bottom-color 0.5s ease-in-out;
+		-webkit-transition: border-bottom-color 0.5s ease-in-out;
+		-ms-transition: border-bottom-color 0.5s ease-in-out;
+		transition: border-bottom-color 0.5s ease-in-out;
 		text-decoration: none;
 		color: var(--secondary-color);
 		border-bottom: dotted 1px;
-		transition: 0.2s ease-in-out;
+		transition: 0.5s ease-in-out;
 	}
 
 		a:hover {
@@ -194,14 +198,17 @@ input, select, textarea {
 	strong, b {
 		font-weight: 600;
 		color: var(--secondary-color);
+		transition: 0.5s ease-in-out;
 	}
 
 	em, i {
 		font-style: italic;
+		transition: 0.5s ease-in-out;
 	}
 
 	p {
 		margin: 0 0 2rem 0;
+		transition: 0.5s ease-in-out;
 		
 	}
 
@@ -213,6 +220,7 @@ input, select, textarea {
 		line-height: 1.75;
 		margin: 0 0 1.5rem 0;
 		text-transform: uppercase;
+		transition: 0.5s ease-in-out;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1861,10 +1869,10 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
-		-webkit-transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
-		-ms-transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
-		transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
+		-moz-transition: background-color 5s ease-in-out, box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+		-webkit-transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+		-ms-transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.325rem;
 		border: 0;
@@ -2755,16 +2763,17 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon {
-				-moz-transition: background-color 0.25s ease-in-out;
-				-webkit-transition: background-color 0.25s ease-in-out;
-				-ms-transition: background-color 0.25s ease-in-out;
-				transition: background-color 0.25s ease-in-out;
+				-moz-transition: background-color 0.5s ease-in-out;
+				-webkit-transition: background-color 0.5s ease-in-out;
+				-ms-transition: background-color 0.5s ease-in-out;
+				transition: background-color 0.5s ease-in-out;
 				width: 2.25rem;
 				height: 2.25rem;
 				text-align: center;
 				line-height: 2.25rem;
 				border-radius: 2.25rem;
 				display: inline-block;
+				transition: 0.5s ease-in-out;
 			}
 
 				ul.icons li .icon:before {
@@ -3012,10 +3021,10 @@ input, select, textarea {
 				-webkit-animation: gallery-modal-spinner 1s infinite linear;
 				-ms-animation: gallery-modal-spinner 1s infinite linear;
 				animation: gallery-modal-spinner 1s infinite linear;
-				-moz-transition: opacity 0.25s ease;
-				-webkit-transition: opacity 0.25s ease;
-				-ms-transition: opacity 0.25s ease;
-				transition: opacity 0.25s ease;
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
 				-moz-transition-delay: 0.5s;
 				-webkit-transition-delay: 0.5s;
 				-ms-transition-delay: 0.5s;
@@ -3055,10 +3064,10 @@ input, select, textarea {
 				-webkit-transform: translateY(0.75rem);
 				-ms-transform: translateY(0.75rem);
 				transform: translateY(0.75rem);
-				-moz-transition: opacity 0.25s ease, -moz-transform 0.25s ease;
-				-webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
-				-ms-transition: opacity 0.25s ease, -ms-transform 0.25s ease;
-				transition: opacity 0.25s ease, transform 0.25s ease;
+				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+				-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+				-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+				transition: opacity 0.5s ease, transform 0.5s ease;
 				opacity: 0;
 			}
 
@@ -3245,6 +3254,7 @@ input, select, textarea {
 			top: 0;
 			width: 50vw;
 			z-index: -1;
+			
 		}
 
 		#wrapper section {
@@ -3391,7 +3401,7 @@ input, select, textarea {
 			}
 
 		#wrapper .copyright {
-			color: rgba(0, 0, 0, 0.25);
+			color: var(--second-color);
 			font-size: 1rem;
 			left: 50vw;
 			position: relative;
@@ -3556,6 +3566,7 @@ input, select, textarea {
 
 				#wrapper:before {
 					display: none;
+					
 				}
 
 				#wrapper section {
@@ -3806,6 +3817,7 @@ input, select, textarea {
 
 	#wrapper:before {
 		transition: opacity 1s ease;
+		transition: 0.5s ease-in-out;
 	}
 
 		body.is-preload #wrapper:before {
@@ -3813,16 +3825,16 @@ input, select, textarea {
 		}
 
 	#wrapper > section.intro {
-		transition: opacity 1s ease;
+		transition: opacity 0.5s ease-in-out;
 		opacity: 1;
 	}
 
 		#wrapper > section.intro > header {
-			transition: transform 1s ease;
+			transition: transform 0.5s ease-in-out;
 		}
 
 		#wrapper > section.intro > .content {
-			transition: transform 1s ease;
+			transition: transform 0.5s ease-in-out;
 		}
 
 		body.is-preload #wrapper > section.intro {
@@ -3840,7 +3852,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#wrapper > section.intro > header > * {
-				transition: transform 1s ease, opacity 1s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
 			}
 
 			body.is-preload #wrapper > section.intro > header {
@@ -3933,6 +3945,7 @@ input, select, textarea {
 		background-position: 25% 50%;
 		background-repeat: repeat-y;
 		background-size: 40rem auto;
+		transition: 0.5s ease-in-out;
 	}
 
 	.logo{
@@ -3956,7 +3969,52 @@ input, select, textarea {
 
 	.circle_img{
 		border-radius: 50%;
-		width: 100px;
+		max-width: 100px;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	}
+	
+	@media screen and (max-width: 500px){
+		.circle_img{
+			width: 50px;
+		}
+	}
+
+	@media screen and (max-width: 300px){
+		.circle_img{
+			width: 40px;
+		}
+
+		.skill-style{
+			font-size: 13px;
+		}
+
+	}
+
+	@media screen and (max-width: 200px){
+		.circle_img{
+			width: 20px;
+		}
+
+		.skill-style{
+			font-size: 11px;
+		}
+
+	}
+
+	.skill-style{
+		text-align: center;
+	}
+
+	.image-center{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.transition{
+		transition: 0.5s ease-in-out;
+	}
+		
+
 
