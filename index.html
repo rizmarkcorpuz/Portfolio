@@ -20,7 +20,7 @@
 						<li><a href="#first" class="scrolly">ABOUT</a></li>
 						<li><a href="#portfolio" class="scrolly">PORTFOLIO</a></li>
 						<li><a href="#skills" class="scrolly">SERVICES</a></li>
-						<li><a href="#contact" class="scrolly">Contact</a></li>
+						<li><a href="#contact" class="scrolly">CONTACT</a></li>
 					</ul>
 						<img class="moon" src="images/moon.svg" alt="" id="icon" >
 				</nav>
@@ -28,8 +28,8 @@
 				<!-- Intro -->
 					<section class="intro" style="margin-top: 90px;">
 						<header>
-							<h1>Riz Mark Corpuz Portfolio</h1>
-							<p>Full-Stack Developer well versed in PHP, JavaScript, SQL, .NET <br> <a href="https://www.linkedin.com/in/riz-mark-corpuz/">rizmarkcorpuz</a></p>
+							<h1 class="transition">Riz Mark Corpuz Portfolio</h1>
+							<p class="transition">Full-Stack Developer well versed in PHP, JavaScript, SQL, .NET <br> <a href="https://www.linkedin.com/in/riz-mark-corpuz/">rizmarkcorpuz</a></p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
@@ -44,8 +44,8 @@
 						<header>
 							<h2>About Me</h2>
 						</header>
-						<div class="content">
-							<span class="image main"><img style="width: 90%; height: 90%; padding: 50px; margin-left: 50px;" src="images/rizmark_corpuz.JPG" alt="" /></span>
+						<div class="content transition">
+							<span class="image main"><img style="width: 90%; height: 90%; padding: 50px; margin:auto;" src="images/rizmark_corpuz.JPG" alt="" /></span>
 							<p><strong>A Bachelor of Science in Information Technology</strong> graduate who seeks an opportunity to contribute myskills and knowledge to your company.</p>
 							<p><strong>Education</strong> 2018 - 2023</p>
 							<p><strong>Cavite State University - Cavite City Campus</strong></p>
@@ -114,44 +114,47 @@
 						</header>
 						<div class="content">
 							<p><strong>Programming Language</strong> I use when developing a website, game, or an application.
-								<div class="row ">
-									<div class="col-2">
-										<img src="images/html.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>HTML</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/css.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>CSS</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/js.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>JavaScript</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/react.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>React</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/redux.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>Redux</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/node.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>NodeJS</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/mysql.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>MySQL</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/php.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>PHP</strong></p>
-									</div>
-									<div class="col-2">
-										<img src="images/java.png" alt="Avatar" class="circle_img">
-										<p style="text-align: center;"><strong>Java</strong></p>
+								<div class="container">
+									<div class="row">
+										<div class="col-3 image-center">
+											<img src="images/html.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>HTML</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/css.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>CSS</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/js.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>JavaScript</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/react.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>React</strong></p>
+										</div>
+										<div class="col-3 image-center" style="margin: auto;">
+											<img src="images/redux.png"  alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>Redux</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/node.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>NodeJS</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/mysql.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>MySQL</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/php.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>PHP</strong></p>
+										</div>
+										<div class="col-3 image-center">
+											<img src="images/java.png" alt="Avatar" class="circle_img">
+											<p class="skill-style"><strong>Java</strong></p>
+										</div>
 									</div>
 								</div>
+								
 								
 								
 								
@@ -443,13 +446,13 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 								</li>
 								<li>
 									<h3>Mobile Number</h3>
-									<a href="#">(+639) 993-975-0780</a> DITO
+									<p><a href="#">(+639) 993-975-0780</a> DITO</p>
 									<br>
-									<a href="#">(+639) 997-100-1588</a> TM
+									<p><a href="#">(+639) 997-100-1588</a> TM</p>
 								</li>
 								<li>
 									<h3>Address</h3>
-									<span>Lot 9 Blk. 32 Phase 3 Carissa Homes Brgy. Bagtas Tanza, Cavite</span>
+									<span><p>Lot 9 Blk. 32 Phase 3 Carissa Homes Brgy. Bagtas Tanza, Cavite</p></span>
 								</li>
 								<li>
 									<h3>Elsewhere</h3>
