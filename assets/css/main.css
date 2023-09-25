@@ -3977,6 +3977,7 @@ input, select, textarea {
 		background-position: 25% 50%;
 		background-repeat: repeat-y;
 		background-size: 40rem auto;
+		transition: 0.5s ease-in-out;
 	}
 
 	.logo{
